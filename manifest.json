@@ -1,0 +1,17 @@
+{
+    "name": "TitleExtension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Extension to get tab title",
+    "permissions": [
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/joker.png",
+            "48": "images/joker.png",
+            "128": "images/joker.png"
+        }
+    }
+}
