@@ -9,9 +9,9 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "images/joker.png",
-            "48": "images/joker.png",
-            "128": "images/joker.png"
+            "16": "images/face.png",
+            "48": "images/face.png",
+            "128": "images/face.png"
         }
     }
 }
