@@ -1,0 +1,58 @@
+// {
+//     "name": "TitleExtension",
+//     "version": "1.0",
+//     "manifest_version": 3,
+//     "description": "Extension to get tab title",
+//     "permissions": [
+//         "tabs"
+//     ],
+
+//       "host_permissions": ["https://www.linkedin.com/*",],
+//     "action": {
+//         "default_popup": "popup.html",
+//         "default_icon": {
+//             "16": "images/face.png",
+//             "48": "images/face.png",
+//             "128": "images/face.png"
+//         }
+//     }
+// }
+
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Scraper",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "http://localhost:8080/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/face.png"
+  }
+  // ,
+  // "content_scripts": [
+  //   {
+  //     "matches": ["https://www.linkedin.com/in/*"],
+  //     "js": ["content/profileScraper.js"]
+  //   },
+  //   {
+  //     "matches": ["https://www.linkedin.com/feed/*"],
+  //     "js": ["content/feedAutomation.js"]
+  //   },
+  //   {
+  //     "matches": ["https://www.linkedin.com/*"],
+  //     "js": ["content/check.js"]
+  //   }
+    
+  // ]
+}
