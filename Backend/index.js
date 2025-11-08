@@ -5,9 +5,6 @@ const {dbConnect}=require('./db');
 const {sequelize}=require('./db');
 const cors = require("cors");
 
-
-
-
 dbConnect();
 app.use(cors());
 
@@ -24,11 +21,6 @@ try{
 }
 })
 
-app.post("/feed", (req, res) => {
-  console.log("📥 Received feed data:", req.body);
-  res.json({ success: true, message: "Feed data stored successfully!" });
-});
-
-app.listen(3000,()=>{
-    console.log("server is listening on port 3000");
+app.listen(5000,()=>{
+    console.log("server is listening on port 5000");
 })

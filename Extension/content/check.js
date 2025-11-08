@@ -1,1 +1,0 @@
-console.log("This i checking for content.js")

@@ -15,12 +15,11 @@ function toggleFeedBtn() {
 likeInput.addEventListener("input", toggleFeedBtn);
 commentInput.addEventListener("input", toggleFeedBtn);
 
-// When scraping profiles
 document.getElementById("startScrapeBtn").addEventListener("click", () => {
   chrome.runtime.sendMessage({ action: "startScraping" });
 });
 
-// When starting feed actions
+
 startFeedBtn.addEventListener("click", async () => {
   const likeCount = parseInt(likeInput.value);
   const commentCount = parseInt(commentInput.value);
